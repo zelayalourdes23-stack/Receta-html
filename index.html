@@ -24,10 +24,50 @@
         width: 400px;
         height: auto;
       }
+      .encabezado, .pie-pagina {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 25px;
+      }
+      .redes {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .redes a {
+        color:darkred;
+        text-decoration: none;
+        font-weight:bold;
+        background-color: rgba(255, 255, 255, 0.85);
+        border: 2px solid darkred;
+        padding: 5px 10px;
+        border-radius: 6px;
+      }
+      .redes a:hover {
+        background-color: darkred;
+        color: white;
+      }
     </style>
 </head>
 <body>
-  <h1>Fideos con salsa</h1>  
+  <header class="encabezado">
+    <div class="logo">
+    <img src="logo.jpeg" alt="Logo de la receta" class="img-logo">
+  </div>
+  
+  <h1>class="titulo-pagina">Fideos con salsa</h1>
+  <div class="redes">
+    <a href="https://wa.me/" target="_blank">WhatsApp</a>
+    <a href="https://www.facebook.com/" target="_blank">facebook</a>
+    <a href="https://www.instagram.com/" target="_blank">instagram</a>
+    <a href="https://www.youtube.com/" target="_blank">youtube</a>
+  </div>
+  </header>
+  
   <p>Una receta clasica de Bolonia, Italia</p>
   <h2>Historia de la receta</h2>
   <p>
